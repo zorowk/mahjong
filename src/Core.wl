@@ -7,11 +7,16 @@ StateHand::usage = "StateHand[state, player] returns a player's current conceale
 
 Begin["`Private`"]
 
-InitialState[ruleSetVersion_String, playerCount_Integer?Positive : 4] := <|
+InitialState[ruleSetVersion_String] := InitialState[ruleSetVersion, 4];
+
+InitialState[ruleSetVersion_String, playerCount_Integer?Positive] := <|
   "RuleSetVersion" -> ruleSetVersion,
   "PlayerCount" -> playerCount,
   "Hands" -> AssociationThread[Range[playerCount], ConstantArray[{}, playerCount]],
   "Discards" -> AssociationThread[Range[playerCount], ConstantArray[{}, playerCount]],
+  "Melds" -> AssociationThread[Range[playerCount], ConstantArray[{}, playerCount]],
+  "LastDiscard" -> Missing["None"],
+  "KongChain" -> <|"Open" -> False, "Multiplier" -> 1, "Payments" -> {}|>,
   "CurrentPlayer" -> 1,
   "Phase" -> "Setup",
   "Terminal" -> False,

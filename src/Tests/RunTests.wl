@@ -11,6 +11,15 @@ eventLog = {
   <|"Type" -> "Draw", "Player" -> 1, "Tile" -> "9条"|>,
   <|"Type" -> "Discard", "Player" -> 1, "Tile" -> "9条"|>
 };
+kawuxingLog = {
+  <|"Type" -> "GameStart", "RuleSetVersion" -> Mahjong`Rules`KawuxingRuleSetVersion|>,
+  <|"Type" -> "Deal", "Player" -> 1, "Tiles" -> {"1筒", "1筒", "1筒", "1筒"}|>,
+  <|"Type" -> "Deal", "Player" -> 2, "Tiles" -> {"2条", "2条", "2条", "2条"}|>,
+  <|"Type" -> "Gang", "Player" -> 1, "Tile" -> "1筒", "Kind" -> "Concealed"|>,
+  <|"Type" -> "Draw", "Player" -> 1, "Tile" -> "9筒"|>,
+  <|"Type" -> "Discard", "Player" -> 1, "Tile" -> "9筒"|>,
+  <|"Type" -> "Gang", "Player" -> 2, "Tile" -> "2条", "Kind" -> "Concealed"|>
+};
 
 TestReport[{
   VerificationTest[Length[Mahjong`Rules`TileUniverse[]], 27, TestID -> "three-suits-universe"],
@@ -22,5 +31,8 @@ TestReport[{
   VerificationTest[Mahjong`Core`StateHand[Mahjong`Replay`Replay[eventLog, 4], 1], Sort[tenpai], TestID -> "replay-applies-discard"],
   VerificationTest[Length[Mahjong`Rules`LegalActions[Mahjong`Replay`Replay[eventLog, 3]]], 14, TestID -> "legal-actions-projects-distinct-discards"],
   VerificationTest[Module[{state, context, analysis}, state = Mahjong`Replay`Replay[eventLog, 3]; context = Mahjong`Replay`DecisionContext[state, 1, <|"Type" -> "Discard", "Player" -> 1, "Tile" -> "9条"|>]; analysis = Mahjong`Analysis`AnalyzeDecision["G1-D1", context]; MemberQ[analysis["BestActions"], analysis["SelectedAction"]]], True, TestID -> "decision-analysis-retains-best-tie"],
-  VerificationTest[StringQ[Mahjong`Coach`TemplateCoach[Mahjong`Coach`BuildCoachEvidence[Mahjong`Analysis`AnalyzeDecision["G1-D1", Mahjong`Replay`DecisionContext[Mahjong`Replay`Replay[eventLog, 3], 1, <|"Type" -> "Discard", "Player" -> 1, "Tile" -> "9条"|>]]]], True, TestID -> "template-coach-is-deterministic"]
+  VerificationTest[StringQ[Mahjong`Coach`TemplateCoach[Mahjong`Coach`BuildCoachEvidence[Mahjong`Analysis`AnalyzeDecision["G1-D1", Mahjong`Replay`DecisionContext[Mahjong`Replay`Replay[eventLog, 3], 1, <|"Type" -> "Discard", "Player" -> 1, "Tile" -> "9条"|>]]]]], True, TestID -> "template-coach-is-deterministic"]
+  , VerificationTest[Length[Mahjong`Rules`TileUniverse[Mahjong`Rules`KawuxingRuleSetVersion]], 21, TestID -> "kawuxing-tile-types"]
+  , VerificationTest[Mahjong`Replay`Replay[kawuxingLog, 1]["PlayerCount"], 3, TestID -> "kawuxing-defaults-to-three-players"]
+  , VerificationTest[Mahjong`Replay`Replay[kawuxingLog]["KongChain"]["Multiplier"], 2, TestID -> "consecutive-kongs-double"]
 }]

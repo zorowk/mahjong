@@ -47,7 +47,9 @@ shantenSearch[c_, melds_, taatsu_, pair_] := Module[{i, best, c1, usableTaatsu},
 Shanten[hand_List] /; And @@ (TileQ /@ hand) && Max[Join[Values[counts[hand]], {0}]] <= 4 := shantenSearch[counts[hand], 0, 0, 0];
 Shanten[_] := Failure["InvalidHand", <|"MessageTemplate" -> "InvalidHand"|>];
 
-Ukeire[hand_List, visibleTiles_List : hand] /; And @@ (TileQ /@ Join[hand, visibleTiles]) := Module[{base, effective},
+Ukeire[hand_List] := Ukeire[hand, hand];
+
+Ukeire[hand_List, visibleTiles_List] /; And @@ (TileQ /@ Join[hand, visibleTiles]) := Module[{base, effective},
   base = Shanten[hand];
   effective = Select[TileUniverse[], Count[visibleTiles, #] < 4 && Shanten[Append[hand, #]] < base &];
   <|"Ukeire" -> Total[4 - Count[visibleTiles, #] & /@ effective], "EffectiveTiles" -> (<|"Tile" -> #, "Count" -> 4 - Count[visibleTiles, #]|> &) /@ effective|>

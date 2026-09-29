@@ -39,7 +39,10 @@ AnalyzeDecision[decisionId_String, context_Association] := Module[{evaluations, 
 ];
 
 issueType[analysis_] := If[analysis["ShantenDelta"] > 0, "shanten_regression", "lower_ukeire_same_shanten"];
-SelectReviews[analyses_List, max_Integer : 5, maxPerIssue_Integer : 2] := Module[{candidates, sorted, selected = <||>, result = {}, issue},
+SelectReviews[analyses_List] := SelectReviews[analyses, 5, 2];
+SelectReviews[analyses_List, max_Integer] := SelectReviews[analyses, max, 2];
+
+SelectReviews[analyses_List, max_Integer, maxPerIssue_Integer] := Module[{candidates, sorted, selected = <||>, result = {}, issue},
   candidates = Select[analyses, !MemberQ[# ["BestActions"], # ["SelectedAction"]] && # ["EvaluationAmbiguity"] =!= "high" &];
   sorted = SortBy[candidates, {-# ["ShantenDelta"], -Max[0, -# ["UkeireDelta"]], -# ["SelectedRank"], Switch[# ["EvaluationAmbiguity"], "low", 0, "medium", 1, _, 2]} &];
   Do[issue = issueType[analysis]; If[Lookup[selected, issue, 0] < maxPerIssue, AppendTo[result, analysis]; selected = Join[selected, <|issue -> Lookup[selected, issue, 0] + 1|>]], {analysis, sorted}];
