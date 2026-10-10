@@ -4,6 +4,7 @@ CoachPolicy::usage = "CoachPolicy contains system-wide explanatory constraints."
 BuildCoachEvidence::usage = "BuildCoachEvidence[analysis] projects only explainable mathematical evidence.";
 TemplateCoach::usage = "TemplateCoach[evidence] produces a deterministic Chinese explanation.";
 LLMCoachPrompt::usage = "LLMCoachPrompt[evidence] returns constrained input for an external LLM, not a model call.";
+LLMCoach::usage = "LLMCoach[evidence, generator] invokes an explicitly supplied provider with policy and evidence only.";
 
 Begin["`Private`"]
 
@@ -25,6 +26,12 @@ TemplateCoach[evidence_Association] := Module[{e = evidence["Evidence"]},
 ];
 
 LLMCoachPrompt[evidence_Association] := <|"Policy" -> CoachPolicy, "Evidence" -> evidence, "Instruction" -> "仅解释给定证据；不得推断心理、胜率、点炮概率或未展示的未来信息；明确说明结论只适用于当前牌效评价器。"|>;
+
+LLMCoach[evidence_Association, generator_] := Module[{text},
+  text = Quiet[Check[generator[LLMCoachPrompt[evidence]], $Failed]];
+  If[!StringQ[text] || StringLength[StringTrim[text]] == 0, Return[Failure["InvalidCoachResponse", <||>]]];
+  <|"Subject" -> evidence["Subject"], "Explanation" -> text, "Source" -> "LLM", "RequiresEvidenceReview" -> True|>
+];
 
 End[]
 EndPackage[]

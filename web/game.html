@@ -1,0 +1,11 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>卡五星 · 本机对局与复盘</title><link rel="stylesheet" href="/style.css"></head><body>
+<header><span>一手之间 · 卡五星</span><a href="/">固定牌例</a></header><main>
+<h1>本机对局与复盘</h1><p>练习桌由你控制三家，观察视角随当前操作玩家切换。所有规则、牌型、结算和牌效评价均由本机 Wolfram 计算。</p>
+<div class="result-head"><button id="new">新局</button><button id="save">下载牌谱</button><label>导入牌谱 <input id="load" type="file" accept="application/json,.json"></label></div>
+<p id="status" aria-live="polite">点击新局开始。</p><section class="table"><div id="label" class="table-label"></div><div id="hand" class="hand"></div><div id="actions" class="table-footer"></div></section>
+<p class="scope">原型计分以底分 1 为单位，无封顶；小胡只自摸。目前约定末张无额外翻倍，亮倒后仅摸切、不可碰杠；这两项规则尚待确认。</p>
+<h2>公开牌</h2><pre id="public"></pre>
+<section id="feedback" hidden><h2>当前打张分析</h2><p id="explanation"></p><pre id="evidence"></pre><button id="commit">执行这次打张</button></section>
+<section><h2>牌谱时间轴</h2><input id="timeline" type="range" min="4" max="4" value="4" aria-label="重放事件位置"><button id="replay">查看所选位置</button><button id="latest">回到最新</button><p id="offset"></p></section>
+<button id="review">分析整局打张</button><label>复盘玩家 <select id="player"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></label><pre id="reviews"></pre>
+<p id="error" role="alert"></p></main><footer>本机实时 Kernel · 规则版本 xiaogan-kawuxing-1.1</footer><script type="module" src="/game.js"></script></body></html>

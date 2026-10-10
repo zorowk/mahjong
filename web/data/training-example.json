@@ -1,6 +1,6 @@
 {
 	"RuleSetVersion":"xiaogan-training-core-0.1",
-	"AnalysisRevision":"2026-10-static-v2",
+	"AnalysisRevision":"2026-10-kawuxing-v3",
 	"EventOffset":3,
 	"Hand":[
 		"1条",
@@ -48,7 +48,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -106,7 +106,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -164,7 +164,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -214,7 +214,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -264,7 +264,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -306,7 +306,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -344,7 +344,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -378,7 +378,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -412,7 +412,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -442,7 +442,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -472,7 +472,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -502,7 +502,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -528,7 +528,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					}
 				],
 				"BestActions":[
@@ -547,7 +547,7 @@
 				"ShantenDelta":1,
 				"UkeireDelta":25,
 				"EvaluationAmbiguity":"low",
-				"AnalysisRevision":"2026-10-static-v2"
+				"AnalysisRevision":"2026-10-kawuxing-v3"
 			},
 			"Evidence":{
 				"Subject":"example-D1",
@@ -596,7 +596,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -654,7 +654,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -712,7 +712,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -762,7 +762,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -812,7 +812,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -854,7 +854,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -892,7 +892,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -926,7 +926,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -960,7 +960,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -990,7 +990,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1020,7 +1020,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1050,7 +1050,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1076,7 +1076,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					}
 				],
 				"BestActions":[
@@ -1095,7 +1095,7 @@
 				"ShantenDelta":1,
 				"UkeireDelta":10,
 				"EvaluationAmbiguity":"low",
-				"AnalysisRevision":"2026-10-static-v2"
+				"AnalysisRevision":"2026-10-kawuxing-v3"
 			},
 			"Evidence":{
 				"Subject":"example-D1",
@@ -1144,7 +1144,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1202,7 +1202,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1260,7 +1260,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1310,7 +1310,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1360,7 +1360,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1402,7 +1402,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1440,7 +1440,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1474,7 +1474,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1508,7 +1508,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1538,7 +1538,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1568,7 +1568,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1598,7 +1598,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1624,7 +1624,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					}
 				],
 				"BestActions":[
@@ -1643,7 +1643,7 @@
 				"ShantenDelta":1,
 				"UkeireDelta":19,
 				"EvaluationAmbiguity":"low",
-				"AnalysisRevision":"2026-10-static-v2"
+				"AnalysisRevision":"2026-10-kawuxing-v3"
 			},
 			"Evidence":{
 				"Subject":"example-D1",
@@ -1692,7 +1692,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1750,7 +1750,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1808,7 +1808,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1858,7 +1858,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1908,7 +1908,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1950,7 +1950,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -1988,7 +1988,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2022,7 +2022,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2056,7 +2056,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2086,7 +2086,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2116,7 +2116,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2146,7 +2146,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2172,7 +2172,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					}
 				],
 				"BestActions":[
@@ -2191,7 +2191,7 @@
 				"ShantenDelta":1,
 				"UkeireDelta":3,
 				"EvaluationAmbiguity":"low",
-				"AnalysisRevision":"2026-10-static-v2"
+				"AnalysisRevision":"2026-10-kawuxing-v3"
 			},
 			"Evidence":{
 				"Subject":"example-D1",
@@ -2240,7 +2240,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2298,7 +2298,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2356,7 +2356,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2406,7 +2406,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2456,7 +2456,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2498,7 +2498,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2536,7 +2536,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2570,7 +2570,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2604,7 +2604,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2634,7 +2634,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2664,7 +2664,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2694,7 +2694,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2720,7 +2720,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					}
 				],
 				"BestActions":[
@@ -2739,7 +2739,7 @@
 				"ShantenDelta":1,
 				"UkeireDelta":0,
 				"EvaluationAmbiguity":"low",
-				"AnalysisRevision":"2026-10-static-v2"
+				"AnalysisRevision":"2026-10-kawuxing-v3"
 			},
 			"Evidence":{
 				"Subject":"example-D1",
@@ -2788,7 +2788,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2846,7 +2846,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2904,7 +2904,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -2954,7 +2954,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3004,7 +3004,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3046,7 +3046,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3084,7 +3084,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3118,7 +3118,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3152,7 +3152,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3182,7 +3182,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3212,7 +3212,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3242,7 +3242,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3268,7 +3268,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					}
 				],
 				"BestActions":[
@@ -3287,7 +3287,7 @@
 				"ShantenDelta":1,
 				"UkeireDelta":3,
 				"EvaluationAmbiguity":"low",
-				"AnalysisRevision":"2026-10-static-v2"
+				"AnalysisRevision":"2026-10-kawuxing-v3"
 			},
 			"Evidence":{
 				"Subject":"example-D1",
@@ -3336,7 +3336,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3394,7 +3394,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3452,7 +3452,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3502,7 +3502,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3552,7 +3552,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3594,7 +3594,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3632,7 +3632,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3666,7 +3666,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3700,7 +3700,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3730,7 +3730,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3760,7 +3760,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3790,7 +3790,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3816,7 +3816,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					}
 				],
 				"BestActions":[
@@ -3835,7 +3835,7 @@
 				"ShantenDelta":1,
 				"UkeireDelta":19,
 				"EvaluationAmbiguity":"low",
-				"AnalysisRevision":"2026-10-static-v2"
+				"AnalysisRevision":"2026-10-kawuxing-v3"
 			},
 			"Evidence":{
 				"Subject":"example-D1",
@@ -3884,7 +3884,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -3942,7 +3942,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4000,7 +4000,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4050,7 +4050,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4100,7 +4100,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4142,7 +4142,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4180,7 +4180,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4214,7 +4214,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4248,7 +4248,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4278,7 +4278,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4308,7 +4308,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4338,7 +4338,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4364,7 +4364,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					}
 				],
 				"BestActions":[
@@ -4383,7 +4383,7 @@
 				"ShantenDelta":1,
 				"UkeireDelta":7,
 				"EvaluationAmbiguity":"low",
-				"AnalysisRevision":"2026-10-static-v2"
+				"AnalysisRevision":"2026-10-kawuxing-v3"
 			},
 			"Evidence":{
 				"Subject":"example-D1",
@@ -4432,7 +4432,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4490,7 +4490,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4548,7 +4548,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4598,7 +4598,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4648,7 +4648,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4690,7 +4690,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4728,7 +4728,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4762,7 +4762,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4796,7 +4796,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4826,7 +4826,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4856,7 +4856,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4886,7 +4886,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -4912,7 +4912,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					}
 				],
 				"BestActions":[
@@ -4931,7 +4931,7 @@
 				"ShantenDelta":1,
 				"UkeireDelta":25,
 				"EvaluationAmbiguity":"low",
-				"AnalysisRevision":"2026-10-static-v2"
+				"AnalysisRevision":"2026-10-kawuxing-v3"
 			},
 			"Evidence":{
 				"Subject":"example-D1",
@@ -4980,7 +4980,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5038,7 +5038,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5096,7 +5096,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5146,7 +5146,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5196,7 +5196,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5238,7 +5238,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5276,7 +5276,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5310,7 +5310,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5344,7 +5344,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5374,7 +5374,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5404,7 +5404,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5434,7 +5434,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5460,7 +5460,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					}
 				],
 				"BestActions":[
@@ -5479,7 +5479,7 @@
 				"ShantenDelta":1,
 				"UkeireDelta":3,
 				"EvaluationAmbiguity":"low",
-				"AnalysisRevision":"2026-10-static-v2"
+				"AnalysisRevision":"2026-10-kawuxing-v3"
 			},
 			"Evidence":{
 				"Subject":"example-D1",
@@ -5528,7 +5528,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5586,7 +5586,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5644,7 +5644,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5694,7 +5694,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5744,7 +5744,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5786,7 +5786,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5824,7 +5824,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5858,7 +5858,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5892,7 +5892,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5922,7 +5922,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5952,7 +5952,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -5982,7 +5982,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6008,7 +6008,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					}
 				],
 				"BestActions":[
@@ -6027,7 +6027,7 @@
 				"ShantenDelta":1,
 				"UkeireDelta":6,
 				"EvaluationAmbiguity":"low",
-				"AnalysisRevision":"2026-10-static-v2"
+				"AnalysisRevision":"2026-10-kawuxing-v3"
 			},
 			"Evidence":{
 				"Subject":"example-D1",
@@ -6076,7 +6076,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6134,7 +6134,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6192,7 +6192,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6242,7 +6242,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6292,7 +6292,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6334,7 +6334,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6372,7 +6372,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6406,7 +6406,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6440,7 +6440,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6470,7 +6470,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6500,7 +6500,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6530,7 +6530,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6556,7 +6556,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					}
 				],
 				"BestActions":[
@@ -6575,7 +6575,7 @@
 				"ShantenDelta":1,
 				"UkeireDelta":11,
 				"EvaluationAmbiguity":"low",
-				"AnalysisRevision":"2026-10-static-v2"
+				"AnalysisRevision":"2026-10-kawuxing-v3"
 			},
 			"Evidence":{
 				"Subject":"example-D1",
@@ -6624,7 +6624,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6682,7 +6682,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6740,7 +6740,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6790,7 +6790,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6840,7 +6840,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6882,7 +6882,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6920,7 +6920,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6954,7 +6954,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -6988,7 +6988,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -7018,7 +7018,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -7048,7 +7048,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -7078,7 +7078,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					},
 					{
 						"Action":{
@@ -7104,7 +7104,7 @@
 								}
 							]
 						},
-						"EvaluatorVersion":"shanten-ukeire-v2"
+						"EvaluatorVersion":"shanten-ukeire-v3"
 					}
 				],
 				"BestActions":[
@@ -7123,7 +7123,7 @@
 				"ShantenDelta":0,
 				"UkeireDelta":0,
 				"EvaluationAmbiguity":"low",
-				"AnalysisRevision":"2026-10-static-v2"
+				"AnalysisRevision":"2026-10-kawuxing-v3"
 			},
 			"Evidence":{
 				"Subject":"example-D1",
