@@ -1,0 +1,8 @@
+{
+  "name": "mahjong-wolfram-training",
+  "private": true,
+  "type": "module",
+  "scripts": {"dev": "node server.mjs", "test": "node --test test.mjs"},
+  "engines": {"node": ">=20"},
+  "packageManager": "pnpm@10.20.0"
+}

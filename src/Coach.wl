@@ -16,6 +16,8 @@ BuildCoachEvidence[analysis_Association] := Module[{selected, alternative, evalu
 ];
 
 TemplateCoach[evidence_Association] := Module[{e = evidence["Evidence"]},
+  If[TrueQ[e["SameShanten"]] && e["SelectedUkeire"] == e["AlternativeUkeire"],
+    Return["打" <> e["Selected"] <> "属于当前牌效模型的最优动作集合。向听数为" <> ToString[e["SelectedShanten"]] <> "，有效进张为" <> ToString[e["SelectedUkeire"]] <> "张；并列最优动作同样可以选择。"]];
   If[TrueQ[e["SameShanten"]],
     "这一手主要问题是牌效率。打" <> e["Selected"] <> "和打" <> e["Alternative"] <> "都保持" <> ToString[e["SelectedShanten"]] <> "向听，但前者有效进张为" <> ToString[e["SelectedUkeire"]] <> "张，后者为" <> ToString[e["AlternativeUkeire"]] <> "张；在当前牌效模型下，打" <> e["Alternative"] <> "能保留更多改善手牌的机会。",
     "这一手会让向听数从" <> ToString[e["AlternativeShanten"]] <> "增加到" <> ToString[e["SelectedShanten"]] <> "。在当前牌效模型下，打" <> e["Alternative"] <> "可以避免这一步退步。"

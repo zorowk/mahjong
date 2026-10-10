@@ -2,23 +2,30 @@ BeginPackage["Mahjong`Analysis`", {"Mahjong`Rules`", "Mahjong`Solver`", "Mahjong
 
 AnalysisRevision::usage = "AnalysisRevision identifies this immutable evaluator manifest.";
 AnalysisRevisionManifest::usage = "AnalysisRevisionManifest identifies every versioned dependency of the evaluator.";
+AnalysisRevisionManifests::usage = "AnalysisRevisionManifests retains immutable historical and current dependency manifests.";
 EvaluateActions::usage = "EvaluateActions[decisionContext] returns ActionEvaluation associations.";
 AnalyzeDecision::usage = "AnalyzeDecision[decisionId, decisionContext] creates the sole derived decision-analysis object.";
 SelectReviews::usage = "SelectReviews[analyses] filters and lexicographically selects diverse, clear review points.";
 
 Begin["`Private`"]
 
-AnalysisRevision = "2026-09-static-v1";
-AnalysisRevisionManifest = <|"AnalysisRevision" -> AnalysisRevision, "Rules" -> <|"xiaogan" -> RuleSetVersion|>, "Solver" -> <|"shanten" -> "standard-structure-v1"|>, "Evaluator" -> <|"shanten-ukeire" -> "v1"|>|>;
+AnalysisRevision = "2026-10-static-v2";
+AnalysisRevisionManifest = <|"AnalysisRevision" -> AnalysisRevision, "Rules" -> <|"xiaogan" -> RuleSetVersion|>, "Solver" -> <|"shanten" -> "standard-structure-v2"|>, "Evaluator" -> <|"shanten-ukeire" -> "v2"|>|>;
+AnalysisRevisionManifests = <|
+  "2026-09-static-v1" -> <|"AnalysisRevision" -> "2026-09-static-v1", "Rules" -> <|"xiaogan" -> RuleSetVersion|>, "Solver" -> <|"shanten" -> "standard-structure-v1"|>, "Evaluator" -> <|"shanten-ukeire" -> "v1"|>|>,
+  AnalysisRevision -> AnalysisRevisionManifest
+|>;
 actionEqualQ[a_, b_] := SameQ[KeySort[a], KeySort[b]];
 
 EvaluateActions[context_Association] := Module[{hand, visible, actions},
+  If[context["State"]["RuleSetVersion"] =!= RuleSetVersion,
+    Return[Failure["UnsupportedAnalysisRuleSet", <|"MessageTemplate" -> "Current evaluator only supports the closed training ruleset."|>]]];
   hand = context["Observation"]["Hand"]; visible = context["Observation"]["VisibleTiles"]; actions = context["LegalActions"];
   Map[
     Function[action, Module[{after, u},
       after = DeleteCases[hand, action["Tile"], {1}, 1];
       u = Ukeire[after, visible];
-      <|"Action" -> action, "SortKey" -> {Shanten[after], -u["Ukeire"]}, "Features" -> <|"Shanten" -> Shanten[after], "Ukeire" -> u["Ukeire"], "EffectiveTiles" -> u["EffectiveTiles"]|>, "EvaluatorVersion" -> "shanten-ukeire-v1"|>
+      <|"Action" -> action, "SortKey" -> {Shanten[after], -u["Ukeire"]}, "Features" -> <|"Shanten" -> Shanten[after], "Ukeire" -> u["Ukeire"], "EffectiveTiles" -> u["EffectiveTiles"]|>, "EvaluatorVersion" -> "shanten-ukeire-v2"|>
     ]], actions]
 ];
 
@@ -29,7 +36,7 @@ ambiguity[evaluations_] := Module[{sorted = SortBy[evaluations, # ["SortKey"] &]
 ];
 
 AnalyzeDecision[decisionId_String, context_Association] := Module[{evaluations, sorted, bestKey, best, selected, bestFeature, selectedFeature, rank},
-  evaluations = EvaluateActions[context]; If[evaluations === {}, Return[Failure["NoLegalActions", <||>]]];
+  evaluations = EvaluateActions[context]; If[FailureQ[evaluations], Return[evaluations]]; If[evaluations === {}, Return[Failure["NoLegalActions", <||>]]];
   sorted = SortBy[evaluations, # ["SortKey"] &]; bestKey = sorted[[1, "SortKey"]]; best = Select[sorted, # ["SortKey"] === bestKey &];
   selected = SelectFirst[sorted, actionEqualQ[# ["Action"], context["SelectedAction"]] &, Missing["SelectedActionNotLegal"]];
   If[MissingQ[selected], Return[Failure["SelectedActionNotLegal", <||>]]];

@@ -3,6 +3,7 @@ BeginPackage["Mahjong`Solver`", {"Mahjong`Rules`"}]
 HuQ::usage = "HuQ[hand] checks the current standard four-meld-plus-pair structure.";
 Shanten::usage = "Shanten[hand] returns the standard-structure shanten number for supported numbered tiles.";
 Ukeire::usage = "Ukeire[hand, visibleTiles] returns effective tiles and remaining counts after a discard.";
+ClearSolverCache::usage = "ClearSolverCache[] deletes derived shanten results without changing semantics.";
 
 Begin["`Private`"]
 
@@ -44,13 +45,39 @@ shantenSearch[c_, melds_, taatsu_, pair_] := Module[{i, best, c1, usableTaatsu},
   best
 ];
 
-Shanten[hand_List] /; And @@ (TileQ /@ hand) && Max[Join[Values[counts[hand]], {0}]] <= 4 := shantenSearch[counts[hand], 0, 0, 0];
+(* Numeric counts avoid repeated Association lookups at every recursive branch.
+   The cache contains only derived values and can always be discarded. *)
+fastShanten[vector_List] := Block[{search},
+  search[c_List, m_, t_, p_] := search[c, m, t, p] = Module[{i, best, take},
+    i = SelectFirst[Range[27], c[[#]] > 0 &, None];
+    If[i === None, Return[8 - 2 m - Min[t, 4 - m] - p]];
+    take[indices_] := Fold[ReplacePart[#1, #2 -> (#1[[#2]] - 1)] &, c, indices];
+    best = search[take[{i}], m, t, p];
+    If[m < 4 && c[[i]] >= 3, best = Min[best, search[take[{i, i, i}], m + 1, t, p]]];
+    If[m < 4 && Mod[i - 1, 9] <= 6 && c[[i + 1]] > 0 && c[[i + 2]] > 0,
+      best = Min[best, search[take[{i, i + 1, i + 2}], m + 1, t, p]]];
+    If[c[[i]] >= 2,
+      If[p == 0, best = Min[best, search[take[{i, i}], m, t, 1]]];
+      If[t < 4 - m, best = Min[best, search[take[{i, i}], m, t + 1, p]]]];
+    If[t < 4 - m && Mod[i - 1, 9] <= 7 && c[[i + 1]] > 0,
+      best = Min[best, search[take[{i, i + 1}], m, t + 1, p]]];
+    If[t < 4 - m && Mod[i - 1, 9] <= 6 && c[[i + 2]] > 0,
+      best = Min[best, search[take[{i, i + 2}], m, t + 1, p]]];
+    best
+  ];
+  search[vector, 0, 0, 0]
+];
+cachedShanten[vector_List] := cachedShanten[vector] = fastShanten[vector];
+ClearSolverCache[] := (Clear[cachedShanten]; cachedShanten[vector_List] := cachedShanten[vector] = fastShanten[vector]; Null);
+
+Shanten[hand_List] /; MemberQ[{13, 14}, Length[hand]] && And @@ (TileQ /@ hand) && Max[Join[Values[counts[hand]], {0}]] <= 4 := cachedShanten[Lookup[counts[hand], TileUniverse[], 0]];
 Shanten[_] := Failure["InvalidHand", <|"MessageTemplate" -> "InvalidHand"|>];
 
 Ukeire[hand_List] := Ukeire[hand, hand];
 
 Ukeire[hand_List, visibleTiles_List] /; And @@ (TileQ /@ Join[hand, visibleTiles]) := Module[{base, effective},
   base = Shanten[hand];
+  If[FailureQ[base] || Length[hand] != 13 || Max[Join[Values[Counts[visibleTiles]], {0}]] > 4 || !And @@ (Count[visibleTiles, #] >= Count[hand, #] & /@ DeleteDuplicates[hand]), Return[Failure["InvalidUkeireInput", <||>]]];
   effective = Select[TileUniverse[], Count[visibleTiles, #] < 4 && Shanten[Append[hand, #]] < base &];
   <|"Ukeire" -> Total[4 - Count[visibleTiles, #] & /@ effective], "EffectiveTiles" -> (<|"Tile" -> #, "Count" -> 4 - Count[visibleTiles, #]|> &) /@ effective|>
 ];

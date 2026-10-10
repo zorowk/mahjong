@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>一手之间 · 麻将牌效训练</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header><span>一手之间</span><small>WOLFRAM · 牌效训练</small></header>
+<main>
+  <p class="eyebrow">第一课 / 打张选择</p><h1>你会打出哪一张？</h1>
+  <p class="intro">先做判断，再查看每种打张的向听数与有效进张。</p>
+  <section class="table" aria-label="训练手牌"><div class="table-label">你的手牌 · 摸牌后</div><div id="hand" class="hand"></div>
+    <div class="table-footer"><span id="selection" aria-live="polite">正在加载手牌…</span><button id="submit" disabled>确认打张 →</button></div></section>
+  <p class="scope">固定牌例 · 门清标准牌型训练。结果由本机 Wolfram 预计算；本页暂不支持完整卡五星对局、七对与副露分析。</p>
+  <section id="result" hidden aria-live="polite"><div class="result-head"><h2>这一手的复盘</h2><button id="reset">重新选择</button></div><p id="explanation"></p>
+    <div class="metrics" id="metrics"></div><h3>候选打张</h3><div class="scroll"><table><thead><tr><th>打张</th><th>向听</th><th>有效进张</th><th>有效牌及剩余张数</th></tr></thead><tbody id="candidates"></tbody></table></div>
+    <details><summary>查看可追溯证据</summary><pre id="evidence"></pre></details></section>
+  <p id="error" role="alert" hidden></p>
+</main><footer id="version">WL 负责计算，网页负责展示。</footer><script type="module" src="/app.js"></script>
+</body></html>
